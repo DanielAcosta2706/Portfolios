@@ -1,0 +1,7 @@
+.swiper-pagination-bullet {
+  background-color: hsl(0, 0%, 46%) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: hsl(0, 0%, 20%) !important;
+}

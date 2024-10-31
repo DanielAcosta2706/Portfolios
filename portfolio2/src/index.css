@@ -1,0 +1,277 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body,
+  button,
+  input,
+  textarea {
+    font-family: "poppins", "sans-serif";
+    font-size: 1rem;
+  }
+  body {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 46%);
+  }
+  h1,
+  h2,
+  h3 {
+    color: hsl(0, 0%, 20%);
+    font-weight: 600;
+  }
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: 768px) {
+    body {
+      margin: 0 0 2rem 0;
+    }
+  }
+}
+
+@layer components {
+  .cont {
+    @apply mx-auto max-w-[968px];
+  }
+  .social_Icon {
+    @apply text-xl text-titleColor hover:text-titleColorDark;
+  }
+  .button {
+    @apply inline-block self-center rounded-2xl bg-titleColor px-6 py-3 font-medium text-containerColor hover:bg-titleColorDark md:px-8 md:py-5;
+  }
+  .button--flex {
+    @apply inline-flex items-center;
+  }
+  .section {
+    @apply px-0 py-16;
+  }
+  .section_Title {
+    @apply text-center text-h1Fontsize;
+  }
+  .section_Subtitle {
+    @apply mb-mbottm3 block text-center text-smallFontSize md:mb-20;
+  }
+  /* *********************Component Header********************* */
+  .open_Menu {
+    @apply fixed bottom-0 left-0 w-full rounded-t-3xl bg-bodyColor px-1 pb-16 pt-8 shadow-inner transition duration-300 md:static md:rounded-none md:px-0 md:py-0 md:shadow-none;
+  }
+  .close_Menu {
+    @apply fixed -bottom-full left-0 w-full rounded-t-3xl bg-bodyColor px-1 pb-16 pt-8 transition duration-300 md:static md:rounded-none md:px-0 md:py-0;
+  }
+  .header_Link {
+    @apply flex flex-col items-center text-smallFontSize font-medium text-titleColor transition duration-300 hover:text-titleColorDark active:text-titleColorDark;
+  }
+  .header_Icon {
+    @apply block cursor-pointer text-lg font-medium md:hidden;
+  }
+  /* *********************Component About********************* */
+  .about_Box {
+    @apply rounded-xl border border-solid border-black border-opacity-10 bg-containerColor px-3 py-3 text-center lgx:px-5 lgx:py-4;
+  }
+  .about_Icon {
+    @apply mb-mbottm05 text-2xl text-titleColor;
+  }
+  .about_Title {
+    @apply text-smallFontSize font-medium;
+  }
+  .about_Subtitle {
+    @apply text-tinyFontSize;
+  }
+  /* *********************Component Skills********************* */
+  .skills_Content {
+    @apply rounded-2xl border border-solid border-black border-opacity-10 bg-containerColor p-6 md:px-16 md:py-8;
+  }
+  .skills_Title {
+    @apply mb-mbottm15 text-center text-normal font-medium;
+  }
+  .skills_Box {
+    @apply flex justify-center gap-x-6 mdx:gap-x-10;
+  }
+  .skills_Group {
+    @apply grid items-center gap-y-4;
+  }
+  .skills_Data {
+    @apply flex gap-x-2;
+  }
+  .skills_Icon {
+    @apply text-base text-titleColor;
+  }
+  .skills_Name {
+    @apply text-smallFontSize font-medium leading-4 mdx:text-normal;
+  }
+  .skills_Level {
+    @apply text-tinyFontSize;
+  }
+  /* *********************Component Services********************* */
+  .open_Services {
+    @apply visible fixed bottom-0 left-0 right-0 top-0 z-50 flex items-center justify-center bg-black bg-opacity-50 px-4 py-0 opacity-100 transition duration-300;
+  }
+  .close_Services {
+    @apply invisible fixed bottom-0 left-0 right-0 top-0 z-50 flex items-center justify-center bg-black bg-opacity-50 px-4 py-0 opacity-0 transition duration-300;
+  }
+  .services_Content {
+    @apply relative border border-solid border-black border-opacity-10 bg-containerColor pb-5 pl-6 pr-24 pt-14 sm:pr-2 md:pb-10 md:pl-8 md:pr-0 md:pt-24;
+  }
+  .services_Icon {
+    @apply mb-mbottm1 block text-2xl text-titleColor md:text-4xl;
+  }
+  .services_Title {
+    @apply mb-mbottm1 text-h3Fontsize font-medium;
+  }
+  .services_Modal-content {
+    @apply relative w-[500px] rounded-3xl bg-containerColor px-6 pb-10 pt-16 md:px-10 md:pb-10 md:pt-20;
+  }
+  .services_Modal-close {
+    @apply absolute right-6 top-6 cursor-pointer text-2xl text-titleColor;
+  }
+  .services_Modal-title {
+    @apply mb-mbottm1 text-center text-h3Fontsize font-medium;
+  }
+  .services_Modal-description {
+    @apply mb-mbottm2 text-center text-smallFontSize md:px-14 md:py-0;
+  }
+  .services_Modal-services {
+    @apply grid gap-y-3;
+  }
+  .services_Modal-service {
+    @apply flex items-center gap-x-2;
+  }
+  .services_Modal-icon {
+    @apply text-xl text-titleColor;
+  }
+  .services_Modal-info {
+    @apply text-smallFontSize;
+  }
+  /* *********************Component Qualification********************* */
+  .qualification_ButtonOpen {
+    @apply my-0 inline-flex cursor-pointer items-center text-normal font-medium text-titleColor hover:text-titleColorDark active:text-titleColorDark sm:mx-mbottm1 mdx:text-h3Fontsize;
+  }
+  .qualification_ButtonClose {
+    @apply mx-mbottm1 my-0 inline-flex cursor-pointer items-center text-normal font-medium text-titleColor hover:text-titleColorDark mdx:text-h3Fontsize;
+  }
+  .qualification_Icon {
+    @apply mr-mbottm025 text-3xl;
+  }
+  .qualification_Content {
+    @apply hidden;
+  }
+  .qualification_Content-active {
+    @apply block;
+  }
+  .qualification_Data {
+    @apply grid grid-cols-[1fr,_max-content_1fr] gap-2 md:gap-x-6;
+  }
+  .qualification_Box {
+    @apply grid justify-end;
+  }
+  .qualification_Title {
+    @apply text-smallFontSize font-medium mdx:text-normal;
+  }
+  .qualification_Subtitle {
+    @apply mb-mbottm1 inline-block text-smallFontSize;
+  }
+  .qualification_Calendar {
+    @apply text-smallFontSize;
+  }
+  .qualification_Rounded {
+    @apply inline-block h-3 w-3 rounded-[50%] bg-textColor;
+  }
+  .qualification_Line {
+    @apply block h-full w-0.5 translate-x-1.5 translate-y-[-7px] transform bg-textColor;
+  }
+  /* *********************Component Works********************* */
+  .work_Item {
+    @apply cursor-pointer rounded-lg px-1 py-1 text-smallerFontSize font-medium capitalize text-titleColor hover:bg-titleColor hover:text-containerColor;
+  }
+  .active_Work {
+    @apply bg-titleColor text-containerColor;
+  }
+  /* *********************Component Contact********************* */
+  .contact_Title {
+    @apply mb-mbottm15 text-center text-h3Fontsize font-medium;
+  }
+  .contact_Card {
+    @apply rounded-xl border border-solid border-black border-opacity-10 bg-containerColor p-4 text-center;
+  }
+  .contact_Card-icon {
+    @apply mb-mbottm025 text-h1Fontsize text-titleColor;
+  }
+  .contact_Card-title {
+    @apply text-smallFontSize font-medium;
+  }
+  .contact_Card-data {
+    @apply mb-mbottm075 block text-smallFontSize;
+  }
+  .contact_Form-div {
+    @apply relative mb-mbottm2 h-16;
+  }
+  .contact_Form-tag {
+    @apply absolute left-7 top-[-0.75rem] z-20 bg-bodyColor p-1 text-smallerFontSize;
+  }
+  .contact_Form-input {
+    @apply absolute left-0 top-0 z-10 h-full w-full rounded-xl border-2 border-solid border-black border-opacity-5 bg-none p-6 text-textColor outline-none;
+  }
+  /* *********************Component Footer********************* */
+  .footer_Icon {
+    @apply text-base text-titleColor hover:text-titleColorDark md:text-xl;
+  }
+  .footer_Social {
+    @apply inline-flex rounded-md bg-titleColor p-1 text-base text-containerColor hover:text-titleColorDark lgx:rounded-lg lgx:p-2 lgx:text-xl;
+  }
+  /* *********************Component ScrollUp********************* */
+  .scrollup {
+    @apply fixed right-4 z-50 rounded-[0.4rem] bg-titleColor px-[0.4rem] py-1 opacity-80 hover:bg-titleColorDark smx:right-6 lgx:bottom-[-20%] lgx:right-10 lgx:px-2 lgx:py-[0.3rem];
+  }
+  .show-scroll {
+    @apply bottom-16 md:bottom-12;
+  }
+}
+
+@layer utilities {
+  /* *********************Utilitie Home********************* */
+  .image__profile {
+    animation: profile_animate 8s ease-in-out infinite 1s;
+  }
+  @keyframes profile_animate {
+    0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+  }
+  /* *********************Utilitie Demo Button********************* */
+  .demo_Button {
+    color: hsl(0, 0%, 46%);
+    font-size: 0.875rem;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    width: 100px;
+    cursor: pointer;
+  }
+  .demo_Button-icon {
+    font-size: 1rem;
+    transition: 0.5s;
+  }
+  .demo_Button:hover .demo_Button-icon {
+    transform: translateX(0.25rem);
+  }
+  /* *********************Utilities ScrollUp********************* */
+  .trasition_Scrollup {
+    transition: 0.4s;
+  }
+}
