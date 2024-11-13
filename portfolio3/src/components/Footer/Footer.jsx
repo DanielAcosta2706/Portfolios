@@ -1,4 +1,4 @@
-import { ButtonPrimary } from "../Hero/Button";
+import { ButtonPrimary } from "../Hero/ButtonPrimary";
 import { footerItems } from "./footerItems";
 import { footerSocial } from "./footerSocial";
 

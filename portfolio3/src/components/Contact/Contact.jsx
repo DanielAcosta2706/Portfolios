@@ -45,7 +45,7 @@ export const Contact = () => {
                 id="name"
                 autoComplete="name"
                 required
-                placeholder="Daniel Acosta"
+                placeholder="Type your name"
                 className="text-field reveal-up"
               />
             </div>
@@ -59,7 +59,7 @@ export const Contact = () => {
                 id="email"
                 autoComplete="email"
                 required
-                placeholder="danyel2706@gmail.com"
+                placeholder="Type your email"
                 className="text-field reveal-up"
               />
             </div>
@@ -71,7 +71,7 @@ export const Contact = () => {
             <textarea
               name="message"
               id="message"
-              placeholder="Hi!"
+              placeholder="Hi! Type a Message"
               required
               className="text-field reveal-up max-h-80 min-h-32 resize-none"
             ></textarea>

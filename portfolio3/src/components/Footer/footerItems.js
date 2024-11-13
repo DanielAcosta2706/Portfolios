@@ -14,11 +14,11 @@ export const footerItems = [
     label: "Work",
     href: "#work",
   },
-  {
-    id: 4,
-    label: "Reviews",
-    href: "#reviews",
-  },
+  // {
+  //   id: 4,
+  //   label: "Reviews",
+  //   href: "#reviews",
+  // },
   {
     id: 5,
     label: "Contact me",
