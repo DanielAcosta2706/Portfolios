@@ -1,10 +1,10 @@
-import { AboutItems } from "./AboutItems";
+import { aboutItems } from "./aboutItems";
 
 export const About = () => {
   return (
     <section id="about" className="section">
       <div className="container">
-        <div className="rounded-2xl bg-zinc-800/50 p-7 md:p-12">
+        <div className="reveal-up rounded-2xl bg-zinc-800/50 p-7 md:p-12">
           <p className="mb-4 text-justify text-zinc-300 md:mb-8 md:max-w-[60ch] md:text-xl">
             Welcome! I&apos;m Daniel Acosta, a professional web developer with a
             knack for crafting visually stunning and highly functional websites.
@@ -13,7 +13,7 @@ export const About = () => {
             performance.
           </p>
           <div className="flex flex-wrap items-center gap-4 md:gap-7">
-            {AboutItems.map((item) => (
+            {aboutItems.map((item) => (
               <div key={item.id}>
                 <div className="flex items-center md:mb-2">
                   <span className="text-2xl font-semibold md:text-4xl">

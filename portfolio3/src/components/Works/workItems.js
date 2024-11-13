@@ -1,4 +1,4 @@
-export const WorkItems = [
+export const workItems = [
   {
     id: 1,
     imgSrc: "Project/project-1.jpg",

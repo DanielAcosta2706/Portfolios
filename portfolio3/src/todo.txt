@@ -1,0 +1,6 @@
+* Hacer dark mode
+* Poner boton de whatssapp 
+* Quitar los enlaces y agregar Link
+* Poner el menu hamburguesa en la parte de abajo
+* Validar campos del formulario
+* Hacer el componente review como un slider

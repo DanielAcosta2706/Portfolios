@@ -17,18 +17,25 @@ export const NavbarItems = ({ lastActiveLink, activeCurrentLink }) => {
     },
     {
       id: 3,
-      label: "Work",
-      link: "#work",
+      label: "Tools",
+      link: "#tool",
       className: "nav-link",
     },
     {
       id: 4,
-      label: "Reviews",
-      link: "#reviews",
+      label: "Works",
+      link: "#work",
       className: "nav-link",
     },
+
+    // {
+    //   id: 5,
+    //   label: "Reviews",
+    //   link: "#review",
+    //   className: "nav-link",
+    // },
     {
-      id: 5,
+      id: 6,
       label: "Contact",
       link: "#contact",
       className: "nav-link md:hidden",

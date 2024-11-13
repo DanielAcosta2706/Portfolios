@@ -1,4 +1,4 @@
-export const SkillItems = [
+export const skillItems = [
   {
     id: 1,
     imgSrc: "Skill/html.svg",

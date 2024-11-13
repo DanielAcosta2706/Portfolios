@@ -1,4 +1,4 @@
-export const AboutItems = [
+export const aboutItems = [
   {
     id: 1,
     label: "Project done",
